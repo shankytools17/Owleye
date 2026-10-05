@@ -1,1 +1,17 @@
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<div id="map" style="width: 100%; height: 400px;"></div>
+<script>
+    const map = L.map('map').setView([0, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    
+    async function pollData() {
+        const res = await fetch('http://localhost:3000/api/sessions/YOUR_SESSION_ID');
+        const data = await res.json();
+        if (data.session.location) {
+            const marker = L.marker([data.session.location.lat, data.session.location.lon]).addTo(map);
+            map.setView([data.session.location.lat, data.session.location.lon], 15);
+        }
+    }
+    setInterval(pollData, 5000);
+</script>
