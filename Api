@@ -1,1 +1,13 @@
 
+{
+  "session": {
+    "lastSeen": "2024-05-20T10:30:05.000Z",
+    "location": { "lat": 40.7128, "lon": -74.0060 },
+    "battery": { "level": 0.85, "charging": true },
+    "device": { "userAgent": "..." },
+    "visitCount": 1
+  },
+  "history": [
+    { "timestamp": "2024-05-20T10:30:00.000Z", "location": { "lat": 40.7128, "lon": -74.0060 }, "battery": 0.85 }
+  ]
+}
