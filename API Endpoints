@@ -1,1 +1,25 @@
-
+{
+  "sessionId": "owleye_123e4567-e89b-12d3-a456-426614174000",
+  "timestamp": "2024-05-20T10:30:00.000Z",
+  "device": {
+    "userAgent": "Mozilla/5.0 ...",
+    "platform": "MacIntel",
+    "hardwareConcurrency": 8,
+    "deviceMemory": 16,
+    "gpu": "Apple M2",
+    "canvasHash": [12, 34, 56]
+  },
+  "location": {
+    "lat": 40.7128,
+    "lon": -74.0060,
+    "accuracy": 10,
+    "altitude": 10
+  },
+  "battery": {
+    "level": 0.85,
+    "charging": true
+  },
+  "mediaDevices": [
+    { "kind": "videoinput", "label": "FaceTime HD Camera", "groupId": "1" }
+  ]
+}
